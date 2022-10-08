@@ -8,20 +8,22 @@
     margin-right: auto;
     padding: 200px 0;
     text-align: center;
+
+    &__title {
+            justify-content: center;
+            color: #fff;
+            font-size: 44px;
+            font-weight: 900;
+            letter-spacing: $letter-spacing;
+            line-height: 1.36;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 696px;
+        }
 }
 
-.hero__title {
-    justify-content: center;
-    color: #fff;
-    font-size: 44px;
-    font-weight: 900;
-    letter-spacing: $letter-spacing;
-    line-height: 1.36;
-    text-transform: uppercase;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 696px;
-}
+
 
 .order {
     display: inline-block;

@@ -2,27 +2,25 @@
     background-color: #F5F4FA;
 }
 
-.team__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
 .team {
     display: flex;
     align-items: center;
     flex-basis: calc((100% - 90px)/4);
     padding-bottom: 94px;
-}
 
-.team__list:not(:first-child) {
+    &__title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+&__list:not(:first-child) {
     margin-left: 30px;
 }
 
-.team__list {
+&__list {
 
     background-color: $bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,16 +28,16 @@
 
 }
 
-.team__img {
+&__img {
     display: block;
 }
 
-.team__item {
+&__item {
     text-align: center;
     padding: 30px 10px;
 }
 
-.team__name {
+&__name {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
@@ -47,7 +45,7 @@
     margin-bottom: 10px;
 }
 
-.team__position {
+&__position {
     font-size: 16px;
     font-weight: 400;
     color: #757575;
@@ -56,7 +54,7 @@
 
 }
 
-.team__accounts {
+&__accounts {
     list-style: none;
     display: flex;
     padding: 0;
@@ -65,16 +63,16 @@
     align-items: center;
 }
 
-.team-account__list:not(:last-child) {
+&-account__list:not(:last-child) {
     margin-right: 10px;
 }
 
-.team-account__list {
+&-account__list {
 
     cursor: pointer;
 }
 
-.team-account__link {
+&-account__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,14 +85,16 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-account__link:hover,
-.team-account__link:focus {
+&-account__link:hover,
+&-account__link:focus {
     color: #fff;
     background-color: $accent-color;
 }
 
-.team__account {
+&__account {
     fill: currentColor;
     width: 20px;
     height: 20px;
 }
+}
+
